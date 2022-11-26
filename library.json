@@ -1,0 +1,35 @@
+{
+    "name": "Sticks",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cramduino/Sticks.git"
+    },
+    "authors": [
+        {
+            "name": "Grant Le Roux",
+            "email": "grant.leroux+cramduino.sticks@gmail.com",
+            "maintainer": true
+        }
+    ],
+    "license": "GPL-3.0-or-later",
+    "dependencies": [
+        {
+            "owner": "Chris--A",
+            "name": "Keypad",
+            "version": "^3.1.1"
+        }
+    ],
+    "frameworks": [ "arduino" ],
+    "platforms": [ "atmelavr" ],
+    "headers": [ "Sticks.h" ],
+    "examples": [
+        {
+            "name": "TestSticks1",
+            "base": "examples/TestSticks1",
+            "files": [ "TestSticks1.cpp" ]
+        }
+    ]
+}
