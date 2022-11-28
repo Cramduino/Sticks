@@ -12,6 +12,7 @@ class Sticks {
 
     public:
         Sticks(uint8_t num_axes, Axis* axes);
+        Sticks(uint8_t num_axes, uint8_t* pins, char* labels);
         
         void begin();
         void loop();

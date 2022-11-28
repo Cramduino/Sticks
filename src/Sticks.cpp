@@ -4,6 +4,13 @@ Sticks::Sticks(uint8_t num_axes, Axis* axes) {
     this->_axes = axes;
     this->_count = num_axes;
 }
+Sticks::Sticks(uint8_t num_axes, uint8_t* pins, char* labels) {
+    this->_axes = (Axis*)malloc(sizeof(Axis) * num_axes);
+    for (uint8_t i = 0; i < num_axes; i++) {
+        this->_axes[i] = Axis(pins[i], labels[i]);
+    }
+    this->_count = num_axes;
+}
 
 void Sticks::begin() {
     for (uint8_t i = 0; i < this->_count; i++) { this->_axes[i].begin(); }
